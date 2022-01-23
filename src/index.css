@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+    margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    background-color: #f7f8fc;
+    font-family: Muli;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 26px;
+    color: #424147;
+}
+.loginpage form input{
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 5px!important;
+}
+.loginpage form button{
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+}
+.loginpage form span{
+    cursor: pointer;
+}
+.addproduct input{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 4px;
+
+}
+.addproduct select{
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 4px;
+
+}
+.addproduct form label{
+    margin-bottom: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #3EC0A0;
+}
+.addproduct button{
+    background-color: #036852;
+    border: none;
+    padding: 5px 10px;
+    color: #f7f8fc;
+    font-size: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2px;
+}
+.products{
+    padding-bottom: 100px;
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    border-radius: 5px 5px 0 0;
+  }
+  #customers svg{
+      cursor: pointer;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    background-color: #ffffff;
+    color: #584185;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    
+  }
+  .total p{
+    font-size: 15px;
+    font-weight: bold;
+    color: #584185;
+  }
+  .totalbtn{
+    background-color: #8f79b9;
+    color: #f7f8fc;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .totalbtnact{
+    background-color: #584185;
+    color: #f7f8fc;
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .totalbtn p, .totalbtnact p {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+  }
+  .total h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: #584185;
+  }
+  .total button{
+    background-color: #584185;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  }
+  .total .btndact{
+    background-color: rgb(197, 194, 194);
+  color: black;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  }
+
+  #customers td{
+    font-size: 15px;
+  }
+  #customers td input{
+    border: 1px solid grey;
+    outline: none;
+  }
+  .pdtrow{
+      width: 100%;
+      overflow: hidden;
+  }
+  .cardbtn{
+      cursor: pointer;
+      background-color: #3EC0A0;
+      color: whitesmoke;
+  }
+  .cardbtnactive{
+    background-color: #036852;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  .cardbtnactive svg{
+    font-size: 35px;
+}
+  .cardbtn svg{
+      font-size: 35px;
+  }
+  .responsive-table li {
+    border-radius: 3px;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+  .responsive-table .table-header {
+    background-color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #584185;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+  }
+  .responsive-table .table-row {
+    background-color: #ffffff;
+    box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+  }
+  .responsive-table .col-1 {
+    flex-basis: 20%;
+  }
+  .responsive-table .col-2 {
+    flex-basis: 15%;
+  }
+  .responsive-table .col-3 {
+    flex-basis: 15%;
+  }
+  .responsive-table .col-4 {
+    flex-basis: 15%;
+  }
+  .responsive-table .col-5 {
+    flex-basis: 15%;
+  }
+  .responsive-table .col-6 {
+    flex-basis: 15%;
+  }
+  .responsive-table .col-7 {
+    flex-basis: 15%;
+  }
+  .invoice .total .card{
+      float: right;
+      
+  }
+  .invoice .card{
+      min-width: 400px;
+      width:fit-content;
+      padding: 15px;
+  }
+   .modal-content p{
+    font-size: 13px!important;
+    color: #584185;
+    font-weight: bold;
+    margin: 0!important;
+    padding: 0!important;
+  }
+  .modal-content input, .modal-content select{
+    margin: 0px!important;
+    outline: none;
+    border: 2px solid #8f79b9;
+    border-radius: 4px;
+    font-size: 15px;
+  }
+  .modal-content option{
+    font-size: 15px;
+  }
+  .modal-footer .btnadd{
+    background-color: #584185;
+  }
+  .modal-footer .btnadd svg{
+    font-size: 25px;
+  }
+  .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: white;
+    color: #584185;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  #customers tbody tr {
+    border-bottom: 1px solid white;
+    color: #584185;
+  }
+  
+  #customers tbody tr:nth-of-type(even) {
+    background-color: white;
+  }
+  
+  #customers tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+  }
+  
+  #customers tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+  }
+  .content-table svg{
+    cursor: pointer;
+}
+.cathbtn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cathbtn button{
+  padding: 5px;
+  border: none;
+  color: #036852;
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+.cathbtn .active{
+  border-bottom: 2px solid #036852;
+}
+.products .inputcard{
+  background-color: white;
+  padding: 5px 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.products .inputcard input{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+.products .inputcard1{
+  padding: 5px 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: right;
+  border-radius: 5px;
+  
+}
+.products .inputcard1 button{
+  background-color: #584185;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+  
+
+
+
+
+.customers .inputcard{
+  background-color: white;
+  padding: 5px 10px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  
+}
+.customers .inputcard input{
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+.customers .inputcard1{
+  padding: 5px 10px;
+  margin: 10px 0;
+  display: flex;
+  justify-content: right;
+  border-radius: 5px;
+  
+}
+.customers .inputcard1 button{
+  background-color: #584185;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+  
+.dashcard{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  
+}
+.dashcardm{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  padding: 20px;
+  cursor: pointer;
+  background: #EAC25A;
+background: -webkit-linear-gradient(top left, #EAC25A, #E45333);
+background: -moz-linear-gradient(top left, #EAC25A, #E45333);
+background: linear-gradient(to bottom right, #EAC25A, #E45333);
+/* min-height: 120px; */
+}
+.dashcardm2{
+  /* display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; */
+  padding: 20px;
+  cursor: pointer;
+  background: #88EB5B;
+  background: -webkit-linear-gradient(top left, #88EB5B, #34A6E6);
+  background: -moz-linear-gradient(top left, #88EB5B, #34A6E6);
+  background: linear-gradient(to bottom right, #88EB5B, #34A6E6);
+/* min-height: 120px; */
+}
+.dashboardmain a{
+  text-decoration: none;
+}
+.dashcard svg{
+  font-size: 50px;
+}
+.dashcard h4{
+  font-size: 15px;
+  color: #584185;
+  font-weight: bold;
+}
+.dashcardm h4{
+  font-size: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+.dashcardm svg{
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+}
+.dashcardm h2{
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 3px;
+}
+.findc{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin: 20px 0;
+}
+.findc input{
+  outline: none;
+}
+.findc svg{
+  font-size: 30px;
+  cursor: pointer;
+}
+.cusd p{
+  font-size: 15px;
+  font-weight: bold;
+}
+.cusd a{
+  text-decoration: none;
+  font-size: 15px;
+  border: 1px solid #584185;
+  width: fit-content;
+  color: #584185;
+  margin: 10px 5px;
+}
+.order .modal-body h4{
+  font-size: 10px!important;
+}
+
+  @media (max-width:990px){
+      #customers thead{
+          display: none;
+      }
+      #customers, #customers tbody , #customers tr , #customers td{
+          display: block;
+          width: 100%;
+      }
+      #customers tr{
+          margin-bottom: 15px;
+          font-size: 13px;
+      }
+      #customers tbody tr td{
+          text-align: right;
+          padding-left: 50%;
+          position: relative;
+      }
+      #customers td::before{
+          content: attr(data-label);
+          position: absolute;
+          left: 0;
+          padding-left: 5px;
+          font-size: 13px;
+          font-weight: bold;
+      }
+      .responsive-table .table-header {
+        display: none;
+      }
+      .responsive-table .table-row{
+        
+      }
+      .responsive-table li {
+        display: block;
+      }
+      .responsive-table .col {
+        
+        flex-basis: 100%;
+        
+      }
+      .responsive-table .col {
+        display: flex;
+        padding: 10px 0;
+       
+      }
+      .responsive-table .col ::before {
+        color: #6C7A89;
+        padding-right: 10px;
+        content: attr(data-label);
+        flex-basis: 50%;
+        text-align: right;
+      }
+      
+  }
