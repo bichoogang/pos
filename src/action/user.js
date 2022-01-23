@@ -2,8 +2,8 @@
 import { NORMAL_LOADED, NORMAL_LOADING, NAUTH_ERROR, NLOGIN_SUCCESS, NLOGIN_FAIL, NLOGOUT_SUCESS, NREGISTER_SUCCESS, NREGISTER_FAIL, GET_ERROR } from './types'
 import Axios from 'axios'
 
-// const port="https://invennew.herokuapp.com"
-const port = "http://localhost:8080"
+const port="https://invennew.herokuapp.com"
+// const port = "http://localhost:8080"
 export const loadNormalUser = (dataa) => async (dispatch, getState) => {
     try {
         // alert('hello')

@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-// const port="https://invennew.herokuapp.com"
-const port = "http://localhost:8080"
+const port="https://invennew.herokuapp.com"
+// const port = "http://localhost:8080"
 export const postProduct = (data) => async (dispatch) => {
     try {
         const product = await axios.post(`${port}/product/addproduct`, data)
